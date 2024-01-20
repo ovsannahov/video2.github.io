@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Assignment</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section-video {
+            background-color: #333;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .video-container {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding-bottom: 56.25%;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Video Embedding Tutorial</h1>
+    </header>
+    <main>
+        <section>
+            <img src="./1.png" alt="Step 1">
+            <p>Creating three tags: section, div, and h2. Adding a title to the heading</p>
+            <img src="./2.png" alt="">
+            <p>We add the iframe tag to embed a YouTube video, where src specifies the path or link to the resource, and frameborder="0" defines the absence of a frame around the iframe.</p>
+            <img src="./3.png" alt="">
+            <p>iframe, designed for playing YouTube videos on a web page. The code specifies the dimensions of the video player, the link to a specific YouTube video, and permissions for various features such as automatic playback and fullscreen mode. The attribute frameborder="0" indicates the absence of a frame around the player.</p>
+            <img src="./5.png" alt="">
+            <p>Now we are adding classes.</p>
+            <img src="./6.png" alt="">
+            <p>This CSS code defines styles for elements with the class `.section-video`.<br/>
+               The property `background-color: #333;` sets a dark background color for these elements. <br/>
+               The `color: #fff;` property determines a white text color inside these elements.<br/>
+               Additionally, a padding of 50 pixels is added both vertically and horizontally with `padding: 50px 0;`.<br/>
+               Finally, `text-align: center;` aligns the text at the center of these elements.</p>
+            <img src="./7.png" alt="">
+            <p>position: relative; sets a relative positioning to allow other elements to be positioned relative to it.<br/>
+                width: 80%; establishes the container's width as 80% of its parent element's width.<br/>
+                margin: 0 auto; creates automatic top and bottom margins, horizontally centering the container.<br/>
+                overflow: hidden; ensures that the container hides any excess content that may extend beyond its boundaries.<br/>
+                padding-bottom: 56.25%; sets a bottom internal padding calculated to create proportionate space for embedding a video with a high aspect ratio.</p>
+            <img src="./8.png" alt="">
+            <p>position: absolute;: Sets absolute positioning for the iframe, allowing it to be taken out of the document flow and precisely positioned.<br/>
+                top: 0; and left: 0;: Places the iframe at the top-left corner of its parent element (.video-container).<br/>
+                width: 100%; and height: 100%;: Stretches the iframe to the full size of its parent container, occupying it entirely.</p>        
+            <h2>Final Result:</h2>
+        </section>
+
+        <section class="section-video">
+            <h2 style="color: #fff;">Video</h2>
+            <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/GGK_D3uNgwY?si=Z23gFg5geCMBvTqg"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
